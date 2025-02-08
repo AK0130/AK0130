@@ -3,10 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Pages Site</title>
+    <title>Boy Scout Troop 10</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to My Website!</h1>
-    <p>This is my first website hosted on GitHub Pages.</p>
-</body>
-</html>
+    <header>
+        <div class="container">
+            <h1>Welcome to Boy Scout Troop #10</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#calendar">Troop Calendar</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h2>Our Mission</h2>
+            <p>Troop 10 is dedicated to fostering leadership, community service, and adventure through Scouting.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Troop #10 has been serving the community for over 20 years, providing boys with opportunities to grow into strong leaders.</p>
+        </div>
+    </section>
+
+    <section id="calendar">
+        <div class="container">
+            <h2>Upcoming Events</h2>
+            <ul id="event-list">
+                <!-- Events will be loaded here by JavaScript -->
+            </ul>
+            <button onclick="loadEvents()">Load Events</button>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <p id="form-response"></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
